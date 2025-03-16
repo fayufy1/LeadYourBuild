@@ -3,60 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Modules | Lead Your Build</title>
+    <title>Learning Modules - Lead Your Build</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .lms-container {
-            text-align: center;
-            padding: 50px;
-            background-color: var(--tan);
-        }
-        .lms-heading {
-            color: var(--dark-slate-gray);
-            font-size: 36px;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-        .lms-description {
-            font-size: 18px;
-            color: var(--dark-slate-gray-2);
-            margin-bottom: 20px;
-        }
-        .lms-button {
-            background-color: var(--dark-slate-gray-2);
-            color: white;
-            padding: 12px 24px;
-            text-transform: uppercase;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease-in-out;
-            text-decoration: none;
-        }
-        .lms-button:hover {
-            background-color: var(--dark-slate-gray);
-        }
-    </style>
 </head>
 <body>
-    <header class="navbar">
-        <a href="index.html" class="logo-text">LEAD YOUR BUILD</a>
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="work.html" class="nav-link">Work</a>
-            <a href="contact.html" class="nav-link">Contact</a>
-            <a href="lms.html" class="nav-link w--current">Learning Modules</a>
-        </nav>
-    </header>
-    
-    <section class="lms-container">
-        <h1 class="lms-heading">Explore Learning Modules</h1>
-        <p class="lms-description">Enhance your expertise in construction contract analysis with our interactive learning modules.</p>
-        <a href="https://unfair.talentlms.com" class="lms-button">Access LMS Dashboard</a>
-    </section>
-    
-    <footer class="section footer">
-        <p class="footer-text">&copy; 2025 Lead Your Build. All rights reserved.</p>
-    </footer>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Lead Your Build Logo"> LEAD YOUR BUILD
+            </a>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="work.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="lms.html" class="active">LEARNING MODULES</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section hero">
+        <div class="container">
+            <h1>Explore Learning Modules</h1>
+            <div class="horizontal-bar beige"></div>
+            <p>Enhance your expertise in construction contract analysis with our interactive learning modules.</p>
+            <a href="https://unfair.talentlms.com" class="button beige">Access LMS Dashboard</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="section footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="logo.svg" class="footer-logo" alt="Lead Your Build">
+                <p>© 2025 Lead Your Build. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
