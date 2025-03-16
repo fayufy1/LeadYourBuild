@@ -2684,6 +2684,47 @@ html {
       padding-top: 23px;
     }
   }
+
+.bubble-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.bubble {
+    background-color: #d2b08c; /* Beige tone matching the site */
+    color: #2d2d2d; /* Dark text for readability */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bubble:hover {
+    transform: translateY(-5px);
+}
+
+.lms-button {
+    background-color: #d2b08c; /* Matching beige tone */
+    color: #2d2d2d; /* Dark text */
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.lms-button:hover {
+    background-color: #b89572; /* Slightly darker beige on hover */
+}
+
   
   @media screen and (max-width: 479px) {
     .main-heading {
