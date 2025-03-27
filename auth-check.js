@@ -1,27 +1,30 @@
 // auth-check.js
 
-import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+// ✅ Import auth instance from firebase-init.js
+import { auth } from './firebase-init.js';
+import {
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-const auth = getAuth();
-
-// Check if user is authenticated
+// ✅ Monitor authentication status
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    // User is signed in
     const userEmail = user.email || "User";
     const userNameSpan = document.getElementById("user-name");
+
     if (userNameSpan) {
       userNameSpan.textContent = userEmail;
     }
   } else {
-    // User not signed in, redirect to login page
+    // 🚫 If not on login page, redirect to login
     if (!window.location.href.includes("login.html")) {
       window.location.href = "login.html";
     }
   }
 });
 
-// Optional: Add logout function to global scope
+// ✅ Optional: Logout button function
 window.logout = function () {
   signOut(auth)
     .then(() => {
