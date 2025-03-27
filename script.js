@@ -3798,3 +3798,40 @@
     n(345),
     n(527);
 })();
+
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+import { app } from "./firebase-init.js";
+
+const auth = getAuth(app);
+
+window.signup = function () {
+  const email = document.getElementById("signup-email").value;
+  const password = document.getElementById("signup-password").value;
+  createUserWithEmailAndPassword(auth, email, password)
+    .then(() => window.location.href = "index.html")
+    .catch((error) => alert(error.message));
+};
+
+window.login = function () {
+  const email = document.getElementById("login-email").value;
+  const password = document.getElementById("login-password").value;
+  signInWithEmailAndPassword(auth, email, password)
+    .then(() => window.location.href = "index.html")
+    .catch((error) => alert(error.message));
+};
+
+window.logout = function () {
+  signOut(auth).then(() => window.location.href = "login.html");
+};
+
+// Optional: run on every page to show user or redirect
+onAuthStateChanged(auth, (user) => {
+  const userSpan = document.getElementById("user-name");
+  if (user) {
+    if (userSpan) userSpan.innerText = `Welcome, ${user.email}`;
+  } else {
+    if (!window.location.pathname.includes("login") && !window.location.pathname.includes("signup")) {
+      window.location.href = "login.html";
+    }
+  }
+});
