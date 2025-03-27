@@ -1,7 +1,6 @@
 // firebase-init.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA73Bzb2uUziha6Mbx5Jh6Xj1tO-5Pewew",
@@ -9,14 +8,10 @@ const firebaseConfig = {
   projectId: "leadyourbuild-6abed",
   storageBucket: "leadyourbuild-6abed.appspot.com",
   messagingSenderId: "239751583621",
-  appId: "1:239751583621:web:f40e97796834d36b57d6ec",
-  measurementId: "G-WP1R7XJ2XX"
+  appId: "1:239751583621:web:f40e97796834d36b57d6ec"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const analytics = getAnalytics(app);
 
-// Export auth so other modules can use it
 export { auth };
