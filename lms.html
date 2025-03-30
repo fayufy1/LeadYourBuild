@@ -59,30 +59,45 @@
     </script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <div class="navbar w-nav">
-        <div class="w-container">
-            <a href="index.html" class="brand w-clearfix w-nav-brand">
-                <img src="https://cdn.prod.website-files.com/670249190ecec56203aff8a5/670249190ecec56203aff94a_stone-logo-beige.svg"
-                     width="20" alt="Lead Your Build Logo" class="stone-logo"/>
-                <div class="logo-text">LEAD YOUR BUILD</div>
-            </a>
-            <nav class="nav-menu w-nav-menu">
-                <a href="index.html" class="nav-link w-nav-link">Home</a>
-                <a href="work.html" class="nav-link w-nav-link">Work</a>
-                <a href="lms.html" aria-current="page" class="nav-link w-nav-link w--current">Learn</a>
-                <a href="contact.html" class="nav-link w-nav-link">Contact</a>
-                <div class="user-info" id="user-info">
-                    <!-- Login button, visible when not logged in -->
-                    <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
-                  
-                    <!-- Logout section, visible when user is signed in -->
-                    <span id="logged-in" class="nav-text" style="display: none;">
-                      Welcome, <span id="user-name">User</span>
-                      <a href="#" onclick="logout()" class="nav-text">Logout</a>
-                    </span>
-                  </div>
-                <a
+    <div
+      data-collapse="medium"
+      data-animation="default"
+      data-duration="400"
+      data-easing="ease"
+      data-easing2="ease"
+      role="banner"
+      class="navbar w-nav"
+    >
+      <div class="w-container">
+        <a
+          href="/"
+          aria-current="page"
+          class="brand w-clearfix w-nav-brand w--current"
+          ><img
+            src="https://cdn.prod.website-files.com/670249190ecec56203aff8a5/670249190ecec56203aff94a_stone-logo-beige.svg"
+            width="20"
+            alt=""
+            class="stone-logo"
+          />
+          <div class="logo-text">Lead your build</div></a
+        >
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <a href="./index.html" class="nav-link w-nav-link">Home</a
+          ><a href="./work.html" class="nav-link w-nav-link">Work</a
+          ><a href="./lms.html" aria-current="page" class="nav-link w-nav-link w--current">Learn</a
+          ><a href="./contact.html" class="nav-link w-nav-link">Contact</a>
+          <div class="user-info" id="user-info">
+            <!-- Login button, visible when not logged in -->
+            <a href="login.html" id="login-btn" class="nav-link w-nav-link"
+              >Login</a
+            >
+            <!-- Logout section, visible when user is signed in -->
+            <span id="logged-in" class="nav-text" style="display: none">
+              Welcome, <span id="user-name">User</span>
+              <a href="#" onclick="logout()" class="nav-text">Logout</a>
+            </span>
+          </div>
+          <a
             href="#"
             class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link"
             >Facebook</a
@@ -91,7 +106,8 @@
             class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link"
             >Twitter</a
           >
-                <a
+        </nav>
+        <a
           href="#"
           class="nav-link social-icons last w-hidden-medium w-hidden-small w-hidden-tiny w-inline-block"
           ><img
@@ -110,9 +126,6 @@
           <div class="menu-icon w-icon-nav-menu"></div>
         </div>
       </div>
-    </div>
-            </nav>
-        </div>
     </div>
 
     <!-- Hero Section -->
