@@ -18,13 +18,10 @@
         <a href="./work.html" class="nav-link w-nav-link">Work</a>
         <a href="./lms.html" class="nav-link w-nav-link">Learn</a>
         <a href="./contact.html" class="nav-link w-nav-link">Contact</a>
-        <div class="user-info" id="user-info">
-          <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
-          <span id="logged-in" class="nav-text" style="display: none;">
-            Welcome, <span id="user-name">User</span>
-            <a href="#" onclick="logout()" class="nav-link w-nav-link">Logout</a>
-          </span>
-        </div>
+        <!-- Login button, visible when not logged in -->
+        <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
+        <!-- Logout section, visible when user is signed in -->
+        <a href="#" id= "logged-in" onclick="logout()" class="nav-link w-nav-link">Logout</a>
       </nav>
       <div class="menu-button w-nav-button">
         <div class="menu-icon w-icon-nav-menu"></div>

@@ -13,7 +13,7 @@ onAuthStateChanged(auth, (user) => {
     }
     // Show the logout section and hide the login button
     if (loggedInElem) {
-      loggedInElem.style.display = "inline";
+      loggedInElem.style.display = "inline-block";
     }
     if (loginBtn) {
       loginBtn.style.display = "none";
@@ -24,11 +24,8 @@ onAuthStateChanged(auth, (user) => {
       loggedInElem.style.display = "none";
     }
     if (loginBtn) {
-      loginBtn.style.display = "inline";
+      loginBtn.style.display = "inline-block";
     }
-    // if (!window.location.href.includes("login.html")) {
-    //   window.location.href = "login.html";
-    // }
   }
 });
 
@@ -38,8 +35,8 @@ window.logout = function () {
       alert("Signed out successfully.");
       // Optionally update UI immediately
       document.getElementById("logged-in").style.display = "none";
-      document.getElementById("login-btn").style.display = "inline";
-      window.location.href = "login.html";
+      document.getElementById("login-btn").style.display = "inline-block";
+      window.location.href = "./index.html";
     })
     .catch((error) => {
       console.error("Error signing out:", error);
