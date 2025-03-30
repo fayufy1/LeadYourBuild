@@ -85,7 +85,17 @@
           ><a href="./work.html" class="nav-link w-nav-link">Work</a
           ><a href="./lms.html" class="nav-link w-nav-link">Learn</a
           ><a href="./contact.html" class="nav-link w-nav-link">Contact</a
-          ><a
+          ><div class="user-info" id="user-info">
+            <!-- Login button, visible when not logged in -->
+            <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
+          
+            <!-- Logout section, visible when user is signed in -->
+            <span id="logged-in" class="nav-text" style="display: none;">
+              Welcome, <span id="user-name">User</span>
+              <a href="#" onclick="logout()" class="nav-text">Logout</a>
+            </span>
+          </div>
+          <a
             href="#"
             class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link"
             >Facebook</a
@@ -138,7 +148,7 @@
               Understand your building contract, rights and obligations to have
               the best building experience possible
             </div>
-            <a href="/work" class="button">get started</a>
+            <a href="/work.html" class="button">get started</a>
           </div>
         </div>
         <div class="slide _2 w-slide">
@@ -183,7 +193,7 @@
               Unlock smarter insights with our AI-powered contract analyzer,
               streamlining your construction agreements effortlessly.
             </p>
-            <a href="/work" class="button button-2 w-button">ANALYZE</a>
+            <a href="/work.html" class="button button-2 w-button">ANALYZE</a>
           </div>
           <div class="w-col w-col-4">
             <div class="number">002</div>
@@ -199,7 +209,7 @@
               Explore comprehensive learning modules designed to enhance your
               expertise in construction contract analysis.
             </p>
-            <a href="#" class="button button-2 w-button">LEARN</a>
+            <a href="lms.html" class="button button-2 w-button">LEARN</a>
           </div>
           <div class="w-col w-col-4">
             <div class="number">003</div>
@@ -275,6 +285,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./auth-check.js"></script>
     <script
       src="script.js"
       type="text/javascript"

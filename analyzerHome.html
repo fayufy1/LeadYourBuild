@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Construction Contract Analyzer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="w-container">
+      <a href="/" class="brand w-clearfix w-nav-brand">
+        <img src="https://cdn.prod.website-files.com/670249190ecec56203aff8a5/670249190ecec56203aff94a_stone-logo-beige.svg" width="20" alt="" class="stone-logo" />
+        <div class="logo-text">lead your build</div>
+      </a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="./index.html" class="nav-link w-nav-link">Home</a>
+        <a href="./work.html" class="nav-link w-nav-link">Work</a>
+        <a href="./lms.html" class="nav-link w-nav-link">Learn</a>
+        <a href="./contact.html" class="nav-link w-nav-link">Contact</a>
+        <div class="user-info" id="user-info">
+          <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
+          <span id="logged-in" class="nav-text" style="display: none;">
+            Welcome, <span id="user-name">User</span>
+            <a href="#" onclick="logout()" class="nav-link w-nav-link">Logout</a>
+          </span>
+        </div>
+      </nav>
+      <div class="menu-button w-nav-button">
+        <div class="menu-icon w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Analyzer Section -->
+  <div class="section grey">
+    <div class="w-container">
+      <h1 class="analyzer-home-header">Upload Your Contract</h1>
+      <div class="horizontal-bar beige"></div>
+      <p class="analyzer-home-subheading">Get a detailed AI-powered analysis of your construction contract.</p>
+
+      <div class="analyzer-form">
+        <div class="drop-area" id="drop-area">
+          <p>Drag and drop your documents here or click to upload</p>
+          <label for="file-input" class="custom-file-label">Choose Files</label>
+          <input type="file" id="file-input" accept=".pdf,.docx,.doc,.txt" multiple />
+          <div id="file-list">
+            <ul id="fileNames"></ul>
+          </div>
+        </div>
+
+        <div class="submit-section" style="text-align: center; margin-top: 20px;">
+          <button id="submit-files" class="button solid">Analyze Contract</button>
+        </div>
+
+        <div class="result-section" style="margin-top: 40px;">
+          <h2 class="project-title">Contract Analysis Results</h2>
+          <textarea id="analysis-output" placeholder="The contract analysis will appear here..." rows="10" style="width: 100%; padding: 10px;"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer from work.html -->
+  <div class="section footer">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-clearfix w-col w-col-4">
+          <img src="https://cdn.prod.website-files.com/670249190ecec56203aff8a5/670249190ecec56203aff933_stone-logo.svg" width="20" alt="" class="stone-logo footer" />
+          <div class="footer-text">2024 Lead Your Build Co.</div>
+        </div>
+        <div class="w-col w-col-4">
+          <a href="/contact" class="button beige footer">get in touch with us</a>
+        </div>
+        <div class="w-col w-col-4">
+          <div class="footer-text address">2 George St, Brisbane City, QLD 4000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="auth-check.js"></script>
+</body>
+</html>

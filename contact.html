@@ -85,7 +85,16 @@
             aria-current="page"
             class="nav-link w-nav-link w--current"
             >Contact</a
-          >                                                            
+          ><div class="user-info" id="user-info">
+            <!-- Login button, visible when not logged in -->
+            <a href="login.html" id="login-btn" class="nav-link w-nav-link">Login</a>
+          
+            <!-- Logout section, visible when user is signed in -->
+            <span id="logged-in" class="nav-text" style="display: none;">
+              Welcome, <span id="user-name">User</span>
+              <a href="#" onclick="logout()" class="nav-text">Logout</a>
+            </span>
+          </div>                                                            
           <a
             href="#"
             class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link"
@@ -250,6 +259,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="./auth-check.js"></script>
     <script
       src="script.js"
       type="text/javascript"

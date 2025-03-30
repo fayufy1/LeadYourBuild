@@ -225,6 +225,7 @@ html {
     background-color: #fff;
     min-height: 100%;
     margin: 0;
+    margin-top: 60px;
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -2830,3 +2831,141 @@ html {
       text-align: center;
     }
   }
+
+  .nav-text {
+    color: #ededed;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 30px;
+    display: inline-block;
+  }
+
+  /* AnalyzerHome.css */
+
+/* Header and subheading styling */
+.analyzer-home-header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 47px;
+  color: #c7aa8b; /* Beige tone matching your theme */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.horizontal-bar.beige {
+  background-color: #c7aa8b;
+  width: 60px;
+  height: 2px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.analyzer-home-subheading {
+  font-family: Vollkorn, serif;
+  font-size: 21px;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form container styling */
+.analyzer-form {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin: 0 auto;
+}
+
+.drop-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed #d1d1d1;
+  border-radius: 8px;
+  background-color: #fafafa;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Hide the default file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the label as a button */
+.custom-file-label {
+  display: inline-block;
+  background-color: #4d4d4d;
+  color: #fff;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.custom-file-label:hover {
+  background-color: #323232;
+}
+
+.drop-area p {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Submit button styling (using your site's button theme) */
+.submit-section .button.solid {
+  background-color: #4d4d4d;
+  color: #fff;
+  padding: 12px 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-section .button.solid:hover {
+  background-color: #323232;
+}
+
+/* Results section styling */
+.result-section .project-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  resize: vertical;
+}
+
+  
+
