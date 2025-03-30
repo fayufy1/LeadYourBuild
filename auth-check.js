@@ -26,9 +26,9 @@ onAuthStateChanged(auth, (user) => {
     if (loginBtn) {
       loginBtn.style.display = "inline";
     }
-    if (!window.location.href.includes("login.html")) {
-      window.location.href = "login.html";
-    }
+    // if (!window.location.href.includes("login.html")) {
+    //   window.location.href = "login.html";
+    // }
   }
 });
 
