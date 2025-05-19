@@ -1,4 +1,4 @@
-const OPENAI_API_KEY = ''; // Replace with your OpenAI API key
+const OPENAI_API_KEY = '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'; // Replace with your OpenAI API key
 
 const dropArea = document.getElementById('drop-area');
 const fileInput = document.getElementById('file-input');
