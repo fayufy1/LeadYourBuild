@@ -2895,6 +2895,7 @@ html {
   background-color: #fafafa;
   cursor: pointer;
   margin-bottom: 20px;
+    color: black;
 }
 
 /* Hide the default file input */
@@ -2966,6 +2967,7 @@ input[type="file"] {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   resize: vertical;
+    color: black;
 }
 
 
