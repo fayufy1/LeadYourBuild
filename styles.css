@@ -2193,7 +2193,7 @@ html {
   }
   
   .section.grey {
-    color: #fff;
+/*     color: #fff; */
     background-color: #333;
     padding-top: 20px;
     padding-bottom: 20px;
