@@ -110,10 +110,85 @@ Admins can create new courses and manage users. Learners can only access assigne
 ## 🚀 Getting Started
 
 ### 1. Clone this repository
-
 ```bash
 git clone https://github.com/fayufy1/LeadYourBuild.git
-cd LeadYourBuild
+cd LeadYourBuild    
+```
+
+---
+
+## 🌍 Deployment on Vercel
+
+To host the site on your own domain:
+
+1. Push the full project to GitHub
+2. Go to [https://vercel.com](https://vercel.com) and sign in with GitHub
+3. Click **“New Project”** and import your repo
+4. After deploying, go to **Settings → Domains**
+5. Add your custom domain (e.g., `leadyourbuild.com.au`)
+6. Update DNS settings in your domain registrar (e.g., Hostinger):
+
+```text
+ns1.vercel-dns.com  
+ns2.vercel-dns.com
+```
+## 🗂️ Folder Structure
+LeadYourBuild/
+│
+├── index.html              # Home page
+├── login.html              # Login form
+├── signup.html             # Sign-up form
+├── work.html               # Contract Analyzer
+├── lms.html                # Learning modules
+├── contact.html            # Contact page
+├── analyzerHome.html       # Analyzer dashboard
+│
+├── firebase-init.js        # Firebase config
+├── auth-check.js           # Auth session checker
+├── app.js                  # App logic
+├── script.js               # UI interactivity
+├── styles.css              # Styling
+└── README.md               # This file
+
+## 👥Project Roles
+| Team Member             | Role & Responsibility                                   |
+| ----------------------- | ------------------------------------------------------- |
+| **Fayaaz Chowdhury**    | Backend, Firebase Auth, LMS research/setup, security    |
+| **Dharman Popat**       | Frontend design, login/signup integration               |
+| **Fuad Ali**            | AI tool/API research, contract analyzer concept         |
+| **Otto Appleton-Miles** | Project management, Trello, documentation, sprint setup |
+
+## 📘 How to Add Courses in TalentLMS
+1) Visit https://talentlms.com and log in with the admin account
+
+2) Click on “Courses” in the navigation
+
+3) Select “Add Course”
+
+4) Fill in:
+
+Course title
+
+Course category
+
+Course description
+
+5) Add learning units like:
+
+📄 Text content
+
+🎥 Video lectures
+
+🧠 Quizzes
+
+📁 File downloads
+
+6) Go to the Users tab to create or assign learners
+
+7) Click “Save and Publish”
+
+🧠 Tip: Admins can manage everything. Learners only access assigned courses.
+
 
 
 
